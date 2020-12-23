@@ -51,7 +51,7 @@ You can configure your webview in different ways (settings are optional):
 var options = {
   useSandboxLogger: Boolean,      // Default: true | Will redirect 'console.log()', 'console.warn()' and 'console.error()' messages to the sandbox dev console
   
-  // Note: Enable the "use sensor" option in your battlecouch project to use this
+  // Note: Enable the "use sensor" option in your unity project to use this
   sensorRequired: Boolean,        // Default: false | Will prevent the player from playing the game if the orientation & motion sensors are not supported or not available.
   sensorEventEnabled: Boolean,    // Default: true | Enable or Disable the sensor data event on start. This can be turned On or Off later.
   sensorEventSendRate: Number,    // Default: 10 | min=1 max=10 | How many times per second the sensor data will be sent.

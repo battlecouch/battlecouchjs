@@ -9,8 +9,8 @@
 		"url": "https://github.com/battlecouch/battlecouchjs.git"
 	},
 	"homepage": "https://github.com/battlecouch/battlecouchjs",
-	"main": "./dist/BattleCouch.js",
-	"browser": "./dist/BattleCouch.js",
+	"main": "./dist/battlecouchjs.js",
+	"browser": "./dist/battlecouchjs.js",
 	"module": "./src/index.js",
 	"files": [
 		"dist/*",
