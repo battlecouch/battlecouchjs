@@ -1,5 +1,5 @@
 {
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"name": "battlecouchjs",
 	"description": "BattleCouch bridge between a webview and a Unity game.",
 	"author": "battlecouch <hello@battlecouch.io> (https://battlecouch.io)",
@@ -32,9 +32,9 @@
 		"@babel/preset-env": "7.5.5",
 		"babel-loader": "8.0.6",
 		"babel-plugin-add-module-exports": "1.0.2",
+		"clean-webpack-plugin": "^3.0.0",
 		"eslint": "^7.16.0",
 		"eslint-loader": "^4.0.2",
-		"clean-webpack-plugin": "^3.0.0",
 		"html-webpack-plugin": "^4.5.0",
 		"lodash": "^4.17.20",
 		"webpack": "^5.11.0",
