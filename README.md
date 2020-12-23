@@ -54,6 +54,6 @@ var options = {
   // Note: Enable the "use sensor" option in your unity project to use this
   sensorRequired: Boolean,        // Default: false | Will prevent the player from playing the game if the orientation & motion sensors are not supported or not available.
   sensorEventEnabled: Boolean,    // Default: true | Enable or Disable the sensor data event on start. This can be turned On or Off later.
-  sensorEventSendRate: Number    // Default: 10 | min=1 max=10 | How many times per second the sensor data will be sent.
+  sensorEventSendRate: Number    // Default: 10 | min=1 max=15 | How many times per second the sensor data will be sent.
 };
 ```

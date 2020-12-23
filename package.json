@@ -1,5 +1,5 @@
 {
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"name": "battlecouchjs",
 	"description": "BattleCouch bridge between a webview and a Unity game.",
 	"author": "battlecouch <hello@battlecouch.io> (https://battlecouch.io)",
