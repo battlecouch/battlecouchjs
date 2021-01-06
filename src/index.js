@@ -1,5 +1,3 @@
-
-
 /**
  *  ----------------------------------------------------------------------------------------------
  *  Private Functions
@@ -7,7 +5,6 @@
  */
 
 let BattleCouch = {};
-
 let WebViewListeners = {};
 let IsInitialized = false;
     
@@ -44,16 +41,12 @@ function SetWebviewSettings(opts)
     // Hijack the default console fow the sandbox one
     if (opts.useSandboxLogger === true)
     {
-        // if (!console)
-        //console = {};        
-        
         console.log = function (message) { BattleCouch.LogSandboxMsg(0, message); };
         console.warn = function (message) { BattleCouch.LogSandboxMsg(1, message); };
         console.error = function (message) { BattleCouch.LogSandboxMsg(2, message); };
     }
 
-    BattleCouch.EnableSensorDataEvent(opts.sensorEventEnabled);
-
+    // Will handle change in parent (ex: EnableSensorDataEvent(), etc.)
     SendMsgToParentView('SetWebViewSettings', opts);
 }
 
@@ -161,11 +154,14 @@ BattleCouch.SendData = function(jsonData)
 
 /**
  * This will set the Alpha rotation to 0 on the browser side. 
- * The sensor data will return the relative value based on this angle.
+ * The sensor data will return the relative value based on this angle.<br>
+ * 
+ * You can also set the default angles for a specific axis ex: ['alpha', 'beta', 'gamma'].<br>
+ * @param {Array} axis
  */
-BattleCouch.SetDeviceOrientation = function()
+BattleCouch.SetDeviceOrientation = function(axis= undefined)
 {
-    SendMsgToParentView('SetDeviceOrientation');
+    SendMsgToParentView('SetDeviceOrientation', axis);
 };
 
 /**

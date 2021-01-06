@@ -40,6 +40,7 @@ import BattleCouch from 'battlecouchjs';
 <!-- Global -->
 <script src="./battlecouchjs.js"></script>
 <script>
+	const BattleCouch = window.battlecouchjs;
     BattleCouch.Init(options);
 </script>
 ```
